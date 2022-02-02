@@ -1,8 +1,19 @@
 
 /* Global Styles
 -------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 body {
-    color: #343434;
+    color: #ca2d2d;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
 }
 
 img {
@@ -14,12 +25,40 @@ a {
 a:hover {
     text-decoration: none;
 }
+h1 {
+    font-size: 75px;
+    line-height: 2;
+    white-space: nowrap; 
+    width: 800px; 
+    border: 1px solid #bad2e2;
+    overflow: hidden;
+    text-overflow: clip; 
+    text-shadow: 2px 2px 5px rgb(204, 95, 23);
+}
+h2 {
+    font-size: 35px;
+}
+h1, h2 {
+    font-family: 'Rowdies', cursive;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
 
 /* Profile
 -------------------------------*/
 header {
     background-color: #2f3061;
-    color: #f7fff7;
+    color: #a8ada8;
 }
 /* Projects
 -------------------------------*/
@@ -35,15 +74,29 @@ color: #2f3061;
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
 }
 .projects .btn:hover {
-    background: rgba(47,48,97,80%);
+    background: rgba(92, 75, 141, 0.8);
 }
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed black;
+    padding: 25px 0;
+}
+.project-item img {
+    float: left;
+    margin-right: 20px;
+}
+.project-item h3 {
+    margin-top: 0;
+}
+
 
 /* Work Experience
 -------------------------------*/
 .work-experience {
-    background-color: #a1c6d7 ;
+    background-color: #91e7d3 ;
 }
 
 /* Education
